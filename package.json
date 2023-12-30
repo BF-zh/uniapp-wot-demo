@@ -36,7 +36,13 @@
     "build:quickapp-webview": "uni build -p quickapp-webview",
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
-    "type-check": "vue-tsc --noEmit"
+    "type-check": "vue-tsc --noEmit",
+    "prepare": "husky install",
+    "lint": "eslint --fix --ext .js,.vue,.ts src",
+    "commit": "git-cz",
+    "release-major": "standard-version --release-as major",
+    "release-minor": "standard-version --release-as minor",
+    "release-patch": "standard-version --release-as patch"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-3081220230817001",
@@ -76,9 +82,12 @@
     "eslint": "npm:eslint-ts-patch",
     "eslint-plugin-format": "^0.1.0",
     "eslint-ts-patch": "8.56.0-0",
+    "git-cz": "^4.9.0",
+    "husky": "^8.0.3",
     "jest": "27.0.4",
     "postcss": "^8.4.32",
     "sass": "^1.69.6",
+    "standard-version": "^9.5.0",
     "typescript": "^5.3.3",
     "unplugin-auto-import": "^0.17.3",
     "unplugin-vue-components": "^0.26.0",
@@ -87,6 +96,11 @@
   },
   "resolutions": {
     "esbuild": "npm:esbuild-wasm@latest"
+  },
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
   },
   "browserslist": [
     "Android >= 4.4",

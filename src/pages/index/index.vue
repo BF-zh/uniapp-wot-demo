@@ -3,6 +3,7 @@
 </script>
 
 <template>
+  <wd-icon name="add-circle" />
   <wd-button>主要按钮</wd-button>
   <wd-button type="success">
     成功按钮
