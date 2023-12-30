@@ -33,7 +33,7 @@ export default defineConfig({
       ],
       deep: true,
       dirs: ['src/components'],
-      dts: 'types/components.ts',
+      dts: 'types/components.d.ts',
     }),
   ],
 })
