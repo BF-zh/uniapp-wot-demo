@@ -1,12 +1,55 @@
 {
   "pages": [ // pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
     {
-      "path": "pages/index/index",
-      "style": {
-        "navigationBarTitleText": "uni-app"
-      }
+      "path": "pages/home/index",
+      "name": "home",
+      "alias": "home"
+    },
+    {
+      "path": "pages/scanner/index",
+      "name": "scanner",
+      "alias": "scanner"
+    },
+
+    {
+      "path": "pages/record/index",
+      "name": "record",
+      "alias": "record"
+    },
+    {
+      "path": "pages/mine/index",
+      "name": "mine",
+      "alias": "mine"
     }
   ],
+  "tabBar": {
+
+    "list": [{
+
+      "pagePath": "pages/home/index",
+      "text": "首页",
+      "iconPath": "src/static/icons/tabbar/home.png",
+      "selectedIconPath": "src/static/icons/tabbar/home-active.png"
+    },
+    {
+      "pagePath": "pages/scanner/index",
+      "text": "扫一扫",
+      "iconPath": "src/static/icons/tabbar/scan.png",
+      "selectedIconPath": "src/static/icons/tabbar/scan-active.png"
+    }, {
+      "pagePath": "pages/record/index",
+      "text": "记录",
+      "iconPath": "src/static/icons/tabbar/record.png",
+      "selectedIconPath": "src/static/icons/tabbar/record-active.png"
+    },
+    {
+      "pagePath": "pages/mine/index",
+      "text": "我的",
+      "iconPath": "src/static/icons/tabbar/mine.png",
+      "selectedIconPath": "src/static/icons/tabbar/mine-active.png"
+    }
+    ]
+  },
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",

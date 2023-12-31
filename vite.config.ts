@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
 import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-const kebabCase = (str: string) => str.replace(/[A-Z]+(?![a-z])|[A-Z]/g, ($, ofs) => (ofs ? '-' : '') + $.toLowerCase())
+import Components, { kebabCase } from '@uni-helper/vite-plugin-uni-components'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [

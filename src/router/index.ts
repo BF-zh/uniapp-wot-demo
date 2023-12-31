@@ -14,5 +14,4 @@ import pagesJson from '../pages.json'
 const router = createRouter({
   routes: [...pagesJsonToRoutes(pagesJson)],
 })
-
 export default router
